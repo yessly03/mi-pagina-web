@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Control de Acceso de Tutores</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Control de Acceso de Tutores</h1>
+
+  <form id="accesoForm" action="registro_tutor.php" method="POST">
+    <label>Fecha:
+      <input type="date" name="fecha" required>
+    </label>
+
+    <label>Nombre completo del padre o tutor:
+      <input type="text" name="nombre_padre" required>
+    </label>
+
+    <label>Procedencia:
+      <input type="text" name="procedencia" required>
+    </label>
+
+    <label>Área que visita:
+      <input type="text" name="area_visita" required>
+    </label>
+
+    <label>Persona que visita:
+      <input type="text" name="persona_visita" required>
+    </label>
+
+    <label>Asunto:
+      <input type="text" name="asunto" required>
+    </label>
+
+    <label>Identificación:
+      <input type="text" name="identificacion" required>
+    </label>
+
+    <label>Nombre completo del alumno:
+      <input type="text" name="nombre_alumno" required>
+    </label>
+
+    <label>Hora entrada:
+      <input type="time" name="hora_entrada" required>
+    </label>
+
+    <label>Hora salida:
+      <input type="time" name="hora_salida">
+    </label>
+
+    <button type="submit">Guardar</button>
+    <a href="Menu.html" class="menu-button">Volver al Menú</a>
+  </form>
+
+  <script>
+    
+  </script>
+
+</body>
+</html>
